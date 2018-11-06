@@ -8,8 +8,8 @@
     />
 
     <bean name="customerService"
-          class="com.pluralsight.service.CustomerServiceImpl">
-        <constructor-arg index="0" ref="customerRepository"/>
+          class="com.pluralsight.service.CustomerServiceImpl" autowire="constructor">
+        <!--<constructor-arg index="0" ref="customerRepository"/>-->
     </bean>
 
 </beans>
